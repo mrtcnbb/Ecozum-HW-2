@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff3e4;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 3vh auto;
+}
+
+.right-aside {
+  display: flex;
+  flex-direction: column;
+  border-radius: 2vh;
+  height: 15px;
+  width: 65%;
+  height: 93vh;
+  background-color: #eed6c4;
+  box-shadow: 0px 21px 19px -5px rgba(0, 0, 0, 0.33);
+}
+
+.left-aside {
+  display: flex;
+  border-radius: 2vh;
+  flex-direction: column;
+  width: 30%;
+  height: 93vh;
+  background-color: #eed6c4;
+  box-shadow: 0px 21px 19px -5px rgba(0, 0, 0, 0.33);
+}
+
+.member-form-container {
+  border-radius: 2vh;
+  margin: 2vh 4vh;
+  padding: 2vh;
+  height: 18.25vh;
+  background-color: #fff7ec;
+  box-shadow: 0px 21px 19px -5px rgba(0, 0, 0, 0.33);
+}
+
+.member-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+
+#member-name,
+#member-balance {
+  height: 4vh;
+  width: 80%;
+  border: none;
+  border: solid 1px #ccc;
+  border-radius: 2vh;
+  padding-left: 1vh;
+}
+
+#member-balance::after {
+  content: '*';
+  color: black;
+}
+
+.member-button {
+  width: 5vw;
+  background: rgb(249, 236, 227);
+  background: linear-gradient(180deg, rgba(249, 236, 227, 1) 45%, rgba(216, 194, 178, 1) 95%);
+  border: none;
+  border-radius: 2vh;
+  line-height: 24px;
+  cursor: pointer;
+  box-shadow: 0px 10px 12px -4px rgba(0, 0, 0, 0.77);
+}
+
+.member-button:hover {
+  transform: scale(1.05);
+}
+
+.member-list-container {
+  border-radius: 2vh;
+  margin: 2vh 4vh 4vh 4vh;
+  padding: 2vh;
+  background-color: #fff7ec;
+  box-shadow: 0px 21px 19px -5px rgba(0, 0, 0, 0.33);
+  height: 65vh;
+  overflow: auto;
+}
+
+.transaction-form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2vh;
+  margin: 2vh 4vh;
+  padding: 2vh;
+  height: 18.25vh;
+  background-color: #fff7ec;
+  box-shadow: 0px 21px 19px -5px rgba(0, 0, 0, 0.33);
+}
+
+.history-list-container {
+  border-radius: 2vh;
+  margin: 2vh 4vh 4vh 4vh;
+  padding: 2vh;
+  background-color: #fff7ec;
+  box-shadow: 0px 21px 19px -5px rgba(0, 0, 0, 0.33);
+  height: 65vh;
+  overflow: auto;
+}
+
+.transaction-form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vh;
+}
+
+#recipient,
+#sender,
+#amount {
+  height: 4vh;
+  width: 12vw;
+  border: none;
+  border: solid 1px #ccc;
+  border-radius: 2vh;
+  padding-left: 1vh;
+}
+
+.history-button {
+  width: 5vw;
+  background: rgb(249, 236, 227);
+  background: linear-gradient(180deg, rgba(249, 236, 227, 1) 45%, rgba(216, 194, 178, 1) 95%);
+  border: none;
+  border-radius: 2vh;
+  line-height: 24px;
+  cursor: pointer;
+  box-shadow: 0px 10px 12px -4px rgba(0, 0, 0, 0.77);
+}
+
+.history-button:hover {
+  transform: scale(1.05);
+}
+
+.history-list {
+  padding-left: 0;
+}
+
+.member-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.customers-list-item {
+  list-style: none;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  border-radius: 1vh;
+  line-height: 24px;
+  margin: 2vh;
+  background-color: #ddbca2;
+  box-shadow: 0px 10px 12px -4px rgba(0, 0, 0, 0.57);
+}
+
+.customer-delete-button {
+  display: inline-block;
+  width: 5vw;
+  background: rgb(249, 236, 227);
+  background: linear-gradient(180deg, rgba(249, 236, 227, 1) 45%, rgba(216, 194, 178, 1) 95%);
+  border: none;
+  border-radius: 2vh;
+  line-height: 24px;
+  cursor: pointer;
+  box-shadow: 0px 10px 12px -4px rgba(0, 0, 0, 0.57);
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.transaction-delete-button {
+  display: inline-block;
+  width: 5vw;
+  background: rgb(249, 236, 227);
+  background: linear-gradient(180deg, rgba(249, 236, 227, 1) 45%, rgba(216, 194, 178, 1) 95%);
+  border: none;
+  border-radius: 2vh;
+  line-height: 24px;
+  cursor: pointer;
+  box-shadow: 0px 10px 12px -4px rgba(0, 0, 0, 0.57);
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.history-detail-list-item {
+  list-style: none;
+  display: flex;
+  padding: 5px;
+  justify-content: space-between;
+  border-radius: 1vh;
+  line-height: 24px;
+  margin: 2vh;
+  background-color: #ddbca2;
+  box-shadow: 0px 10px 12px -4px rgba(0, 0, 0, 0.57);
+}
+
+.filter-transactions {
+  display: flex;
+  justify-content: space-between;
+}
+
+#filter-sender,
+#filter-recipient,
+#filter-sender-recipient {
+  height: 4vh;
+  width: 12vw;
+  border: none;
+  border: solid 1px #ccc;
+  border-radius: 2vh;
+  padding-left: 1vh;
+}
+
+.filtered {
+  display: none !important;
+}
+
+@media screen and (max-width: 1100px) {
+  .history-button {
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    gap: 5vh;
+  }
+
+  .left-aside {
+    width: 100%;
+  }
+
+  .right-aside {
+    width: 100%;
+  }
+}
